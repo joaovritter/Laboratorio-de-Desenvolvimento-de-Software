@@ -21,7 +21,7 @@ public abstract class MetodoPagamento {
       
     public int gerarIdPagamento(){
         Random gerador = new Random();
-        return gerador.nextInt(20);
+        return gerador.nextInt(1001,9999);
     }
     
       public abstract double processarPagamento (double valor);
